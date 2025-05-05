@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="JA Stationery and Enterprises offers quality school, office, and art supplies at affordable prices. Your one-stop stationery store." />
+    <meta name="keywords"
+        content="stationery, school supplies, office supplies, notebooks, pens, printing, art materials, JA Stationery, affordable stationery" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <!-- Open Graph for Social Media Sharing -->
+    <meta property="og:title" content="JA Stationery and Enterprises" />
+    <meta property="og:description"
+        content="Explore a wide range of quality stationery and office supplies at affordable prices. Visit JA Stationery and Enterprises today!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jaenterprises.in" /> <!-- Replace with your actual domain -->
+    <meta property="og:image" content="https://jaenterprises.in/favicon.png" />
+    <!-- Replace with your logo or banner -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <title>Medicines - Nuthan Medicals - JA Stationery and Enterprises | School & Office Supplies</title>
+</head>
+
+<body>
+    <div class="loader">
+        <video src="logo.mp4" loop muted autoplay alt="Logo"></video>
+        <div id="ltext">
+            <p id="loadingtext">Loading ....</p>
+        </div>
+    </div>
+    <div class="errormess">
+
+    </div>
+    <div class="main">
+
+
+        <nav>
+            <div id="logo"><video src="logo.mp4" autoplay loop muted></video></div>
+            <ul>
+                <li><a href="nuthanmedicals.html">Home</a></li>
+                <li><a href="nitems.html">Medicines</a></li>
+                <li class="has-dropdown">
+                    <a href="#" id="shopslink">Shops <i class="fa-solid fa-chevron-down" id="chevrondown"></i></a>
+                    <div class="shopdropdown">
+                        <div class="stationery"><a href="index.html">JA Enterprise</a></div>
+                        <div class="stationery"><a href="stationery.html">JA Stationery</a></div>
+                        <div class="nuthanmedical"><a href="nuthanmedicals.html">Nuthan Medicals</a></div>
+                    </div>
+                </li>
+            </ul>
+            <div class="ctn">
+                <button> <a href="mailto:jastationery2@gmail.com">Contact Us</a></button>
+            </div>
+            <div class="mobnavigation">
+                <i class="fa-solid fa-bars" id="menu"></i>
+            </div>
+        </nav>
+        <div class="mobnav">
+            <i class="fa-solid fa-xmark" id="xmark"></i>
+            <ul>
+                <li><a href="index.html">JA Enterprise</a></li>
+                <li><a href="nitems.html">Medicines</a></li>
+                <li><a href="stationery.html">JA Stationery</a></li>
+                <li><a href="abt.html">About Us</a></li>
+            </ul>
+            <div class="ctn">
+                <button> <a href="mailto:jastationery2@gmail.com">Contact Us</a></button>
+            </div>
+        </div>
+        <div class="whatsappchat">
+            <a href="https://chat.whatsapp.com/LdLr8GVXmDa6QAcDHSRFlL"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div class="hero">
+            <div class="nitemsh1cover">
+                <h1 id="nitemsh1">Available Medicines </h1>
+            </div>
+            <div class="nitemscover">
+                <div class="controls">
+                    <input type="text" id="searchInput" placeholder="Search medicines by name or category...">
+                    <select id="categoryFilter" onchange="medicinesearching()">
+                        <option value="all">All Categories</option>
+                        <option value="Anti-infective medicines">Anti-infective medicines</option>
+                        <option value="Endocrine medicines">Endocrine medicines</option>
+                        <option value="Cardiovascular medicines">Cardiovascular medicines</option>
+                        <option value="Respiratory medicines">Respiratory medicines</option>
+                        <option value="Ophthalmological preparations">Ophthalmological preparations</option>
+                        <option value="Rehydration solutions">Rehydration solutions</option>
+                        <option value="Analgesics and antipyretics">Analgesics and antipyretics</option>
+                        <option value="Anaesthetics">Anaesthetics</option>
+                        <option value="Gastrointestinal medicines">Gastrointestinal medicines</option>
+                        <option value="Anticonvulsants">Anticonvulsants</option>
+                        <option value="Psychiatric medicines">Psychiatric medicines</option>
+                        <option value="Medicines used in substance dependence">Medicines used in substance dependence
+                        </option>
+                        <option value="Dermatological medicines">Dermatological medicines</option>
+                    </select>
+                    <select id="formulationFilter" onchange="medicinesearching()">
+                        <option value="all">All Formulations</option>
+                        <option value="Tablet">Tablet</option>
+                        <option value="Syrup">Syrup</option>
+                        <option value="Injection">Injection</option>
+                        <option value="ORS">ORS</option>
+                        <option value="Capsule">Capsule</option>
+                        <option value="Inhaler">Inhaler</option>
+                        <option value="Eye Drops">Eye Drops</option>
+                        <option value="Cream">Cream</option>
+                    </select>
+                </div>
+                <div id="error" class="error"></div>
+                <div id="nitems" class="medicine-list">
+
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="sociallinks">
+                <!-- <a href="#"><i class="fa-solid fa-envelope"></i></a> -->
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://chat.whatsapp.com/LdLr8GVXmDa6QAcDHSRFlL"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+            </div>
+            <div id="copyright">
+                This is &#169 copyright JA Enterprises . 2025-2030 .
+            </div>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+            integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+            integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>
